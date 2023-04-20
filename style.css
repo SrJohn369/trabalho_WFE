@@ -1,0 +1,23 @@
+@charset "UTF-8";
+h1{
+    text-align: center
+}
+body{
+    background-image: url(imagens/otocastle.jpg);
+    background-position: center;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+}
+.linkh2{
+    display: inline-block;
+    margin: 25px;
+    border: 3px;
+}
+h2{
+    text-align: c;
+}
+div{
+    margin: auto;
+    width: 80%;
+    background-color: #fefefe3a;
+}
