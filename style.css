@@ -1,23 +1,498 @@
-@charset "UTF-8";
-h1{
-    text-align: center
+@charset "UTF-8"; /**/
+@import url(' https://fonts.cdnfonts.com/css/harry-potter ');
+@import url('https://fonts.cdnfonts.com/css/spqr');
+@import url('https://fonts.cdnfonts.com/css/nightmare-pills');
+@font-face {
+    font-family: "harry potter jornal";
+    src: url(fontes/purple-3.ttf);
 }
+@font-face {
+    font-family: "oto harry";
+    src: url(fontes/jenna.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-image: url(imagens/otocastle.jpg);
-    background-position: center;
-    background-position-y: 10px;
-    background-repeat: no-repeat;
+    align-items: center; /*itens no corpo da pagina alinhados no centro*/
+    text-align: center;  /*texto da página alinhado no centro*/
+    padding: 0%;     /*preenchimento de 0%*/
+    margin: 0%;      /*margem de 0%*/
+    background-image: linear-gradient(to top, #4d8eb6, #4b7fa1, #3b6889, #345c7a, #2c4f6c, #274661, #213d56, #1c344c, #102338, #0e233b, #0d1d2f, #081526);  
+    /*cor de fundo em gradiente linear em direção ao topo*/
+    }
+
+
+
+/*   GERAL   */  
+
+h1{                          /*  OK  */
+    margin: 1rem;    /*margem de 1rem*/
+    color: white;
+    text-align: left; /*alinhado à esquerda*/
+    font-family: 'NIGHTMARE PILLS', sans-serif; /*fonte usada*/
+    font-size: 5rem; /*tamanho da fonte*/
+    }
+
+p{                           /*  OK  */
+    text-align: left;   /*parágrafo alinha à esquerda*/
+    color: black;
+    font-family: 'Times New Roman', Times, serif; /*fonte do parágrafo*/
 }
-.linkh2{
-    display: inline-block;
-    margin: 25px;
-    border: 3px;
-}
-h2{
-    text-align: c;
-}
-div{
-    margin: auto;
+
+
+.divedit{
+    padding: 1%;
     width: 80%;
-    background-color: #fefefe3a;
+    margin-top: 5%;
+    margin-bottom: 5% ;
+    margin: auto;
+    background-color: #6b9cce7c;
+}
+
+/*div{        
+    margin-top: 5%;
+    margin-bottom: 5% ;
+    margin: auto;
+    background-color: #6b9cce7c;
+    }
+
+img{
+    width: 30%;
+    margin-right: 2%;
+    } */
+
+h2{
+    font-size: 3rem;    /*e tamanho 3rem*/
+    color: black;   /*h2 por padrão preto*/
+    margin: 1rem;       /*com margem de 1rem*/
+    }
+
+
+
+/*   Cabeçalho da página   */
+
+header{
+    display: flex;     /*Display flex posiciona itens lado a lado*/
+    width: 100%; /*A largura do header vai ocupar 100% da tela*/
+    height: 25rem; /*O header vai ter uma altura de 600px*/
+    background-image: url("imagens/gitcabecalho.gif"); /*COLOQUEI UMA IMAGEM COMO FUNDO DO CABEÇÁRIO*/
+    background-repeat: no-repeat; /*TIREI TODA REPETIÇÃO DA IMAGEM*/
+    background-position: center center; /*A POSIÇÃO DA IMAGEM VAI SER CENTRALIZADO NA HORIZONTAL E VERTICAL*/
+    background-size: cover; /* tamanho o backgraund: Ajusta a imagem o mais largamente possível e mantém sua proporção*/
+    background-attachment: fixed; /*PARA CAUSAR UM EFEITO PARALAX NA IMAGEM*/
+    }
+
+    header .divimgheaderlogo{
+        text-align: left;   /*alinhado à esquerda*/
+        margin-left: 1rem;  /*margem à esquerda de 1 rem*/
+        background-color: transparent; /*fundo transparente*/
+        height: 40rem;   /*altura do logo*/
+        width: 40rem;    /*largura do logo*/
+    }
+
+        header .divimgheaderlogo .imglogo{
+            width: 25rem;   /*tamanho da imagem do logo*/
+        }
+
+
+
+
+    /*   Navegação do cabeçalho   */
+
+        header .divheader{
+            background-color: transparent;   /* fundo da div de navegação transparente*/
+            width: 100%;  /* largura de 100% da div de navegação*/
+            padding-top: 1.5rem;   /*espessura de 1 rem*/
+            }
+        header .divheader nav{
+            text-align: center; /*Todos na tag nav posicionados no centro*/
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0px 2rem;
+            /*O ESPAÇAMENTO INTERNO DE 2 rem PARA CIMA */
+        }
+
+nav a{
+    
+    font-family: 'SPQR', sans-serif;  /*fonte da parte de navegação*/
+    color: white; /*cor da letra*/
+    font-weight: 200; /*espessura letra*/
+    text-decoration: none; /*remove linha embaixo do link*/
+    margin-right: 2rem; /*ESPAÇAMENTO EXTERNO DA DIREITA DE 2rem*/
+    font-size: 1.5rem; /*tamanho da fonte*/
+}
+
+nav a:hover { /*hover é usado quando passamos o cursor do mouse por cima de algum elemento na página html, e com isso aplicamos estilos sobre ele.*/
+    text-decoration: underline; /*QUANDO PASSARMOS O CURSOR POR CIMA DE UM LINK ELE VAI TER UM SUBLINHADO*/
+}
+
+
+/*   Primeiro div (BEM-VINDO)   */
+
+.div1{                           /*  OK  */
+
+    margin: auto;  /*margem automática*/
+    background-color: #6b9cce7c; /*cor de fundo*/
+    align-items: center;  /*itens alinhados no centro*/
+    width: 90%;  /*largura de 90% da página*/
+    }
+
+
+
+.pbemvindo{                     /*parágrafo do primeiro div (BEM-VINDO) */
+    color: white;  /*cor do parágrafo*/
+    font-size: 2rem;  /*tamanho da fonte*/
+    margin: auto;  /*margem automática*/
+    margin-bottom: 1rem; /*margem debaixo*/
+    margin-left: 1rem;  /*margem da esquerda*/
+    }
+
+.jkimgdiv1{                /*  OK  */  /*imagem jkrowling*/
+    margin: auto;  /*margem automática*/
+    border-radius: 50%; /*borda arredondada de 50%*/
+    width: 200px; /*largura da imagem*/
+    height: 200px; /*altura da imagem*/
+    margin-right: 20px; /*margem à direita*/
+}
+
+.pdiv1{             /*  OK  */ /*Parágrafo ao lado da imagem de jk rowling div1*/
+    color: white;  /*cor do parágrafo*/
+    margin: auto;  /*margem automática*/
+    margin-right: 20px;  /*margem à direita*/
+    font-size: 1.5rem;  /*tamanho da fonte*/
+    }
+
+.jkdiv1{                  /*div da imagem jkrowling*/
+    background-color: transparent;  /*cor de fundo*/
+    display: flex;  /*display lado a lado*/
+    margin: auto; /*margem automática*/
+    padding: 1%; /*espessura*/
+    margin-left: 2rem;  /*margem à esquerda 2 rem*/
+}
+
+
+/*   Segundo div (INTRODUÇÃO)   */
+
+.div2{                  /*  OK  */
+    background-color: #c0c7b9;
+    margin-top: 120px;
+    margin: auto;
+    align-items: center;
+    width: 90%;
+    font-size: 15pt;
+}
+
+.div2 p{
+    margin: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.div2img{
+    margin-top: 5%;
+    margin-top: 5%;
+    margin-bottom: 5% ;
+    margin: auto;
+    background-color: #6b9cce7c;
+    align-items: center;
+    width: 90%;
+
+}
+
+/*   Terceiro div   */
+/*    LISTAS   */
+
+.div3{
+    margin-top: 10px;
+    margin-bottom: 5% ;
+    margin: auto;
+    display: flex;
+    background-color: #6b9cce7c;
+    width: 90%;
+    
+}
+
+.divimages{
+    margin: 0;
+    padding: 0;
+
+}
+
+.div3h2{
+
+    text-align: left;
+    font-family: "oto harry";
+}
+
+.itemlista{
+    
+    font-family: "harry potter jornal";
+    text-align:left;
+    margin-bottom: 2%;
+    padding: 1%;
+    list-style-image: url(imagens/f5d13466467906c73a793f8d89efc6a1.png);
+    font-size:25pt;
+    color: rgb(0, 0, 0);
+    }
+
+ul{
+    padding: 2%;
+    }
+
+.divsaga{
+    margin: 1%;
+    padding: 2%;
+}
+
+/*   Quarto div   RODAPÉ*/
+
+footer{
+    font-size: 15pt;
+}
+
+.divrodape{
+    margin: auto;
+    width: 100%;
+    margin-bottom: 0%;
+    padding: 0%;
+    display: flex;
+    margin-top: 5%;
+    background-color: #6b9cce7c;
+}
+
+.h2divrod{
+    text-align: left;
+}
+
+.imgrod{
+    width: 30px;
+    padding: 0%;
+}
+
+li{
+    font-size: 15pt;
+    text-align: left;
+}
+
+.divdiv{
+    padding: 2%;
+    width: 80%;
+    margin-bottom: 0%;
+    margin: auto;
+
+}
+
+
+
+@media (min-width: 375px){
+    .divimages img{
+        width: 9.5rem;
+        padding: .5rem;
+    }
+
+    .divsaga #saga{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5rem;
+    }
+    .divsaga li{
+        padding: 2rem;
+        margin-left: 2rem;
+    }
+
+    .div2img .divimg img{
+        width: 300px;
+    }
+
+}
+
+@media (min-width: 800px){
+    .divimages img{
+        width: 9rem;
+        padding: .5rem;
+    }
+
+    .divsaga #saga{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5rem;
+    }
+    .divsaga li{
+        padding: 2rem;
+        margin-left: 2rem;
+    }
+
+    .divimages .divimgharry{
+        display: flex;
+        padding: 5rem 0;
+        align-items: center;
+    }
+
+    .divimgharry div{
+        margin: auto;
+
+    }
+
+    .div2img .divimg img{
+        width: 300px;
+    }
+
+
+}
+
+
+
+/*  <<< Página 2 (casas) >>>   */
+
+.bb{
+    margin: auto;
+    width: 90%;
+}
+
+.brasoes{
+    margin: -5px;
+    height: 300px;
+    width: 15rem;
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);    
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/*  <<< card >>>   */
+
+#patrono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#007bb2, #0d1423);
+}
+
+.card{
+    margin: auto;
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.card h3{
+    position: relative;
+    bottom: 50px;
+    z-index: 2;
+}
+
+.card .poster{
+    position: relative;
+    overflow: hidden;
+}
+
+.card .poster img{
+    width: 320px;
+    height: 450px;
+}
+
+.card .poster::before{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #043863 50%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card:hover .poster::before{
+    bottom: 0px;
+}
+
+.card .poster img{
+    width: 100%;
+    transition: 0.5s;
+}
+    
+.card:hover .poster img{
+    transform: translatey(-50px);
+    filter: blur(5px) ;
+}
+
+.card .details{
+    position: absolute;
+    bottom: -460px;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.card:hover .details{
+    bottom: 0px;
+}
+
+.card .details h3{
+    font-size: 14px;
+    color: #fff;
+}
+
+.card .details .info{
+    color: black;
+    margin-top: 10px;
+}
+
+
+
+
+.top{
+    width: 300px;
+
+}
+
+.details h2{
+    font-size: 20pt;
+}
+
+.details .info li{
+    font-size: 12pt;
+}
+
+.divedit li{
+    margin: auto;
+    padding: 1%;
+}
+
+.divedit img{
+    width: 10rem;
+}
+
+.divimgharry {
+    background-color: transparent;
+    display: flex;
+    width: 400px;
+    margin: auto;
+}
+
+.divimgharry img {
+    height: 235px;
 }
