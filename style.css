@@ -229,7 +229,6 @@ nav a:hover { /*hover é usado quando passamos o cursor do mouse por cima de alg
 }
 
 .itemlista{
-    
     font-family: "harry potter jornal";
     text-align:left;
     margin-bottom: 2%;
@@ -345,9 +344,6 @@ li{
 
 
 }
-
-
-
 /*  <<< Página 2 (casas) >>>   */
 
 .bb{
@@ -499,4 +495,40 @@ li{
 
 p.center{
     text-align: center;
+}
+li.imagem-1{
+    font-family: "harry potter jornal";
+    text-align:left;
+    margin-bottom: 2%;
+    padding: 1%;
+    list-style-image: url(imagens/icones/git.png);
+    font-size:25pt;
+    color: rgb(0, 0, 0);
+}
+li.imagem-2{
+    font-family: "harry potter jornal";
+    text-align:left;
+    margin-bottom: 2%;
+    padding: 1%;
+    list-style-image: url(imagens/icones/email.png);
+    font-size:25pt;
+    color: rgb(0, 0, 0);
+}
+li.imagem-3{
+    font-family: "harry potter jornal";
+    text-align:left;
+    margin-bottom: 2%;
+    padding: 1%;
+    list-style-image: url(imagens/icones/linkedin.png);
+    font-size:25pt;
+    color: rgb(0, 0, 0);
+}
+li.imagem-4{
+    font-family: "harry potter jornal";
+    text-align:left;
+    margin-bottom: 2%;
+    padding: 1%;
+    list-style-image: url(imagens/icones/fone.png);
+    font-size:25pt;
+    color: rgb(0, 0, 0);
 }
