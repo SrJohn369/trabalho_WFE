@@ -496,3 +496,7 @@ li{
 .divimgharry img {
     height: 235px;
 }
+
+p.center{
+    text-align: center;
+}
